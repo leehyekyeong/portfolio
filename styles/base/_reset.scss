@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  font-family: $font-text;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-text;
+  font-size: $font-size-text;
+}
+
+body {
+  font-family: $font-text;
+  color: $primary;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
