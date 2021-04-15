@@ -1,0 +1,79 @@
+.gnb {
+  font-family: $font-gnb;
+  padding: 12px 0;
+  border-bottom: 1px solid $primary;
+}
+
+#name {
+  font-size: $sm-name-size;
+  line-height: $sm-name-line;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#menu {
+  font-size: $sm-menu-size;
+  line-height: $sm-menu-line;
+  font-weight: 400;
+}
+
+#menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+#menu li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#menu li:last-child {
+  margin: 0;
+}
+
+.selected-menu {
+  color: $point;
+}
+
+.selected-menu::after {
+  content: ' ✨';
+}
+
+@media screen and (min-width: $md-breakpoint) {
+  .gnb {
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #name {
+    text-align: left;
+    margin: 0;
+  }
+
+  #menu ul {
+    justify-content: flex-end;
+  }
+
+  // - positon for ignore $gutter
+  #name {
+    position: relative;
+    left: -10px;
+    font-size: $lg-name-size;
+    line-height: $lg-name-line;
+  }
+
+  // - positon for ignore $gutter
+  #menu {
+    position: relative;
+    right: -10px;
+    font-size: $lg-menu-size;
+    line-height: $lg-menu-line;
+  }
+
+  #menu li {
+    margin-right: 40px;
+  }
+}

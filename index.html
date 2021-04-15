@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hyekyeong Portfolio</title>
+    <title>Leehyekyeong Portfolio</title>
+    <!-- import Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- apply favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -13,5 +22,89 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="row gnb">
+        <div id="name" class="col-sm-4 col-md-2 col-lg-2">Leehyekyeong</div>
+        <div id="menu" class="col-sm-4 col-md-4 col-lg-6">
+          <ul>
+            <li class="selected-menu">Hello</li>
+            <li>Work</li>
+            <li>
+              <a
+                href="https://github.com/leehyekyeong?tab=repositories"
+                target="_blank"
+              >
+                Github
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <ul class="contact">
+            <!-- 1 -->
+            <li>
+              <div class="contact-icon">
+                <img class="icon" src="./assets/icon/magnifying-glass.svg" />
+              </div>
+              <div class="contact-text">구직중</div>
+            </li>
+            <!-- 2 -->
+            <li>
+              <div class="contact-icon">
+                <img class="icon" src="./assets/icon/glasses.svg" />
+              </div>
+              <div class="contact-text">서울시립대학교 시각디자인전공</div>
+            </li>
+            <!-- 3 -->
+            <li>
+              <div class="contact-icon">
+                <img class="icon" src="./assets/icon/email.svg" />
+              </div>
+              <div class="contact-text">2hyekyeong@gmail.com</div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-8">
+          <!-- Interest -->
+          <div class="content-item">
+            <div class="content-item-head">Interest</div>
+            <div class="content-item-body">
+              <ul class="interest-list">
+                <li>GUI 디자인과 UX 디자인</li>
+                <li>반응형 웹 및 모바일 어플리케이션 디자인</li>
+                <li>HTML・CSS・Javascript를 활용한 웹 퍼블리싱</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Tool -->
+          <div class="content-item">
+            <div class="content-item-head">Tool</div>
+            <p class="content-item-body">
+              Photoshop, Illustrator, InDesign과 Xd, Figma, Zeplin
+            </p>
+          </div>
+          <!-- Experience -->
+          <div class="content-item">
+            <div class="content-item-head">Experience</div>
+            <div class="content-item-body">
+              <ul class="experience-list">
+                <li>2021 시립대 시각디자인전공 졸업준비위원회 웹개발팀</li>
+                <li>모바일 어플리케이션 Pretzel UI/UX 디자인</li>
+                <li>서울시립대학교 기획과 근로장학생</li>
+                <li>와디즈 &lt;포우워크&gt; 펀딩 상세페이지 제작</li>
+                <li>
+                  서울시립대학교 융합전공학부 해외탐방결과보고서 책자 디자인
+                </li>
+                <li>모바일 어플리케이션 L!nk UI/UX 디자인</li>
+                <li>동대문구사회적경제지원센터 Brand Identity 디자인</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
