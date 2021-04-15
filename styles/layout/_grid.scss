@@ -37,7 +37,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     max-width: $md-max-container;
     padding: 0 $md-margin;
 
-    @for $i from 1 through $sm-columns {
+    @for $i from 1 through $md-columns {
       .col-md-#{$i} {
         width: $i / $md-columns * 100%;
       }
@@ -48,7 +48,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     max-width: $lg-max-container;
     padding: 0;
 
-    @for $i from 1 through $sm-columns {
+    @for $i from 1 through $lg-columns {
       .col-lg-#{$i} {
         width: ($lg-unit + $gutter) * $i;
       }
