@@ -507,7 +507,7 @@ table {
   height: 100%; }
 
 .content-item {
-  margin-bottom: 32px; }
+  margin-bottom: 24px; }
 
 .content-item-head {
   font-weight: bold;
@@ -548,6 +548,10 @@ table {
     width: 22px;
     height: 22px;
     margin-right: 12px; }
+  .content-item {
+    margin-bottom: 40px; }
+  .content-item-head {
+    margin-bottom: 12px; }
   .interest-list li {
     margin-bottom: 8px; }
   .experience-list tr td {
