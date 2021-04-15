@@ -29,6 +29,11 @@
   cursor: pointer;
 }
 
+#menu li:hover {
+  color: $point;
+  transition: color 200ms ease-in-out;
+}
+
 #menu li:last-child {
   margin: 0;
 }

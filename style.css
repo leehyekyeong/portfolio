@@ -417,6 +417,10 @@ ol {
   margin-right: 20px;
   cursor: pointer; }
 
+#menu li:hover {
+  color: #ad9988;
+  transition: color 200ms ease-in-out; }
+
 #menu li:last-child {
   margin: 0; }
 
