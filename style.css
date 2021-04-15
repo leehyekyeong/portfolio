@@ -349,6 +349,9 @@ ol {
   list-style: none;
   padding-left: 0; }
 
+table {
+  border-spacing: 0; }
+
 .container {
   width: 100%;
   padding: 0 15px;
@@ -377,7 +380,15 @@ ol {
       .container .col-md-3 {
         width: 37.5%; }
       .container .col-md-4 {
-        width: 50%; } }
+        width: 50%; }
+      .container .col-md-5 {
+        width: 62.5%; }
+      .container .col-md-6 {
+        width: 75%; }
+      .container .col-md-7 {
+        width: 87.5%; }
+      .container .col-md-8 {
+        width: 100%; } }
   @media screen and (min-width: 1200px) {
     .container {
       max-width: 1104px;
@@ -389,7 +400,23 @@ ol {
       .container .col-lg-3 {
         width: 276px; }
       .container .col-lg-4 {
-        width: 368px; } }
+        width: 368px; }
+      .container .col-lg-5 {
+        width: 460px; }
+      .container .col-lg-6 {
+        width: 552px; }
+      .container .col-lg-7 {
+        width: 644px; }
+      .container .col-lg-8 {
+        width: 736px; }
+      .container .col-lg-9 {
+        width: 828px; }
+      .container .col-lg-10 {
+        width: 920px; }
+      .container .col-lg-11 {
+        width: 1012px; }
+      .container .col-lg-12 {
+        width: 1104px; } }
 
 .gnb {
   font-family: "Poppins", sans-serif;
@@ -451,7 +478,7 @@ ol {
     font-size: 18px;
     line-height: 24px; }
   #menu li {
-    margin-right: 40px; } }
+    margin-right: 60px; } }
 
 .content {
   padding: 16px 0;
@@ -489,9 +516,21 @@ ol {
 .content-item-body {
   font-weight: normal; }
 
-.interest-list li,
-.experience-list li {
+.interest-list li {
   margin-bottom: 4px; }
+
+.experience-list tr {
+  vertical-align: top; }
+
+.experience-list tr td {
+  padding: 0;
+  padding-bottom: 4px; }
+
+.experience-list tr td:nth-child(1) {
+  width: 140px; }
+
+.experience-list tr td:nth-child(2) {
+  padding-left: 8px; }
 
 @media screen and (min-width: 768px) {
   .content {
@@ -509,6 +548,11 @@ ol {
     width: 22px;
     height: 22px;
     margin-right: 12px; }
-  .interest-list li,
-  .experience-list li {
-    margin-bottom: 8px; } }
+  .interest-list li {
+    margin-bottom: 8px; }
+  .experience-list tr td {
+    padding-bottom: 8px; }
+  .experience-list tr td:nth-child(1) {
+    width: 180px; }
+  .experience-list tr td:nth-child(2) {
+    padding-left: 16px; } }
