@@ -1,18 +1,20 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
 * {
   margin: 0;
-  font-family: $font-text;
+  // font-family: $font-text;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-  font-family: $font-text;
-  font-size: $font-size-text;
+  font-family: $font-content;
+  font-size: $font-size-16;
 }
 
 body {
-  font-family: $font-text;
+  font-family: $font-content;
   color: $primary;
 }
 
@@ -23,6 +25,7 @@ h1 {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 button,
