@@ -36,7 +36,8 @@
 // apply grayscale to unselected work thumbnail
 .work-index .thumbnail-filter {
   filter: grayscale(100%);
-  transition: filter 0.5s ease-in-out;
+  opacity: 50%;
+  transition: filter opacity 0.5s ease-in-out;
   -webkit-filter: grayscale(100%);
   -webkit-transition: 0.5s ease-in-out;
   -moz-filter: grayscale(100%);
@@ -110,7 +111,8 @@
   // thumbnail hover effect
   .work-index .thumbnail-filter:hover {
     filter: grayscale(0%);
-    transition: filter 0.5s ease-in-out;
+    opacity: 100%;
+    transition: filter opacity 0.5s ease-in-out;
     -webkit-filter: grayscale(0%);
     -webkit-transition: 0.5s ease-in-out;
     -moz-filter: grayscale(0%);
