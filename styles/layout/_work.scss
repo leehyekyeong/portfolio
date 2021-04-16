@@ -35,6 +35,8 @@
 
 // apply grayscale to unselected work thumbnail
 .work-index .thumbnail-filter {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
   -webkit-filter: grayscale(100%);
   -webkit-transition: 0.5s ease-in-out;
   -moz-filter: grayscale(100%);
@@ -107,6 +109,8 @@
 @media screen and (min-width: $lg-breakpoint) {
   // thumbnail hover effect
   .work-index .thumbnail-filter:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease-in-out;
     -webkit-filter: grayscale(0%);
     -webkit-transition: 0.5s ease-in-out;
     -moz-filter: grayscale(0%);
