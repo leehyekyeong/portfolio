@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="works col-sm-4 col-md-8 col-lg-12">
+        <div id="works" class="works col-sm-4 col-md-8 col-lg-12">
           <!-- mobile app -->
           <div class="work">
             <div class="work-type">Mobile App</div>
@@ -113,13 +113,26 @@
           </div>
         </div>
         <div class="works-content col-sm-4 col-md-8 col-lg-12">
-          <img src="./assets/works/pretzel-00.png" />
-          <img src="./assets/works/pretzel-01.png" />
-          <img src="./assets/works/pretzel-02.png" />
-          <img src="./assets/works/pretzel-03.png" />
-          <img src="./assets/works/pretzel-04.png" />
+          <div class="work-images">
+            <img src="./assets/works/pretzel-00.png" />
+            <img src="./assets/works/pretzel-01.png" />
+            <img src="./assets/works/pretzel-02.png" />
+            <img src="./assets/works/pretzel-03.png" />
+            <img src="./assets/works/pretzel-04.png" />
+          </div>
+          <a href="#works">
+            <div id="top" class="top">top</div>
+          </a>
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $('#top').click(function (event) {
+        event.preventDefault();
+        var works_y = $('#works').offset();
+        $('html, body').animate({ scrollTop: works_y.top }, 400);
+      });
+    </script>
   </body>
 </html>
