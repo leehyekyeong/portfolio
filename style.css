@@ -633,6 +633,7 @@ table {
     height: 84px;
     margin-right: 16px; }
   .top {
+    padding: 12px 0;
     font-size: 16px;
     line-height: 22px; } }
 
