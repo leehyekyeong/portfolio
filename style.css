@@ -590,6 +590,8 @@ table {
   height: 100%; }
 
 .work-index .thumbnail-filter {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
   -webkit-filter: grayscale(100%);
   -webkit-transition: 0.5s ease-in-out;
   -moz-filter: grayscale(100%);
@@ -642,6 +644,8 @@ table {
 
 @media screen and (min-width: 1200px) {
   .work-index .thumbnail-filter:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease-in-out;
     -webkit-filter: grayscale(0%);
     -webkit-transition: 0.5s ease-in-out;
     -moz-filter: grayscale(0%);
