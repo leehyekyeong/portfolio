@@ -1,0 +1,61 @@
+@mixin text-style-12() {
+  $font-size-12: 12px;
+  $line-height-12: 18px;
+  $letter-spacing-12: -0.01em;
+}
+
+@mixin text-style-16() {
+  $font-size-16: 16px;
+  $line-height-16: 22px;
+  $letter-spacing-16: -0.01em;
+}
+
+@mixin sm-name() {
+  $sm-name-size: 16px;
+  $sm-name-line: 20px;
+}
+
+@mixin sm-menu() {
+  $sm-menu-size: 14px;
+  $sm-menu-line: 22px;
+}
+
+@mixin lg-name() {
+  $lg-name-size: 20px;
+  $lg-name-line: 28px;
+}
+
+@mixin lg-menu() {
+  $lg-menu-size: 18px;
+  $lg-menu-line: 24px;
+}
+
+@mixin text-style($size, $color: false) {
+  @if ($size == 12) {
+    @include text-style-12;
+  }
+  @if ($size == 16) {
+    @include text-style-16;
+  }
+  @if (type-of($color) == color) {
+    color: $color;
+  }
+}
+
+@mixin gnb-style($device, $value, $color: false) {
+  @if ($device == 'sm', $value == 'name') {
+    @include sm-name;
+  }
+  @if ($device == 'sm', $value == 'menu') {
+    @include sm-name;
+  }
+  @if ($device == 'lg', $value == 'name') {
+    @include lg-name;
+  }
+  @if ($device == 'lg', $value == 'menu') {
+    @include lg-name;
+  }
+  @if (type-of($color) == color) {
+    color: $color;
+  }
+}
