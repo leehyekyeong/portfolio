@@ -3,9 +3,10 @@
 }
 
 .work {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  @include flexbox(between, center);
 }
 
 .work-type {
@@ -14,7 +15,8 @@
 }
 
 .work-index {
-  display: flex;
+  // display: flex;
+  @include flexbox;
 }
 
 .work-index {
@@ -85,9 +87,7 @@
   margin: 20px 0;
   border-radius: 8px;
   // align elements
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox;
   // font setting
   font-family: $font-gnb;
   font-size: $font-size-12;
@@ -96,18 +96,17 @@
   line-height: $line-height-12;
   // interaction
   cursor: pointer;
-  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 @include responsive(T) {
   .works {
     padding: 40px 0 24px;
-    display: flex;
-    justify-content: center;
+    @include flexbox;
   }
 
   .work {
-    flex-direction: column;
+    @include column-flexbox;
     margin-right: 80px;
   }
 

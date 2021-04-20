@@ -47,7 +47,7 @@
   content: ' ✨';
 }
 
-@media screen and (min-width: $md-breakpoint) {
+@include responsive(T) {
   .gnb {
     padding: 20px 0;
     justify-content: space-between;
