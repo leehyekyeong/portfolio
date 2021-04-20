@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 html {
   line-height: 1.15;
@@ -609,11 +610,13 @@ table {
 
 .works-content .work-link {
   color: #ad9988;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 20px;
   margin-bottom: 16px; }
   .works-content .work-link .icon {
     display: inline-block;
@@ -626,6 +629,8 @@ table {
     background-position: center center; }
   .works-content .work-link a {
     font-size: 12px; }
+  .works-content .work-link a strong {
+    font-weight: 700; }
   .works-content .work-link a,
   .works-content .work-link a:hover {
     text-decoration: none; }
@@ -699,7 +704,8 @@ table {
       height: 18px;
       margin-right: 8px; }
     .works-content .work-link a {
-      font-size: 16px; }
+      font-size: 16px;
+      padding-top: 2px; }
   .works-content #eastse-website .view-button {
     bottom: 40px;
     right: 40px;
