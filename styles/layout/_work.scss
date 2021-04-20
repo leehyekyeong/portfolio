@@ -53,9 +53,11 @@
 .works-content {
   .work-link {
     color: $point;
+    font-family: $font-gnb;
     text-align: center;
     height: 24px;
     @include flexbox;
+    height: 20px;
     margin-bottom: 16px;
     .icon {
       display: inline-block;
@@ -66,6 +68,9 @@
     }
     a {
       font-size: 12px;
+    }
+    a strong {
+      font-weight: 700;
     }
     a,
     a:hover {
@@ -160,6 +165,7 @@
       }
       a {
         font-size: 16px;
+        padding-top: 2px;
       }
     }
 
