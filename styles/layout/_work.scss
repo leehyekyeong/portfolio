@@ -57,24 +57,12 @@
     text-align: center;
     height: 24px;
     @include flexbox;
-    height: 20px;
     margin-bottom: 16px;
-    .icon {
-      display: inline-block;
-      width: 14px;
-      height: 14px;
-      margin-right: 6px;
-      @include icon('google-play.svg');
-    }
     a {
       font-size: 12px;
     }
     a strong {
       font-weight: 700;
-    }
-    a,
-    a:hover {
-      text-decoration: none;
     }
   }
   .work-images,
@@ -158,11 +146,6 @@
   .works-content {
     .work-link {
       margin-bottom: 24px;
-      .icon {
-        width: 18px;
-        height: 18px;
-        margin-right: 8px;
-      }
       a {
         font-size: 16px;
         padding-top: 2px;

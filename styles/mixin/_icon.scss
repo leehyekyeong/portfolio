@@ -1,6 +1,0 @@
-@mixin icon($filename) {
-  background-image: url('./../../assets/icon/' + $filename);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}

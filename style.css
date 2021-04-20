@@ -616,24 +616,11 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20px;
   margin-bottom: 16px; }
-  .works-content .work-link .icon {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin-right: 6px;
-    background-image: url("./../../assets/icon/google-play.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center; }
   .works-content .work-link a {
     font-size: 12px; }
   .works-content .work-link a strong {
     font-weight: 700; }
-  .works-content .work-link a,
-  .works-content .work-link a:hover {
-    text-decoration: none; }
 
 .works-content .work-images,
 .works-content .work-images img {
@@ -699,10 +686,6 @@ table {
     margin-right: 16px; }
   .works-content .work-link {
     margin-bottom: 24px; }
-    .works-content .work-link .icon {
-      width: 18px;
-      height: 18px;
-      margin-right: 8px; }
     .works-content .work-link a {
       font-size: 16px;
       padding-top: 2px; }
