@@ -421,7 +421,10 @@ table {
 .gnb {
   font-family: "Poppins", sans-serif;
   padding: 12px 0;
-  border-bottom: 1px solid #303030; }
+  border-bottom: 1px solid #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 #name {
   font-size: 16px;
@@ -585,7 +588,7 @@ table {
 .work-index .thumbnail-frame:last-child {
   margin: 0; }
 
-.thumbnail {
+.work-index .thumbnail {
   width: 100%;
   height: 100%; }
 
@@ -599,6 +602,33 @@ table {
   -moz-transition: 0.5s ease-in-out;
   -o-filter: grayscale(100%);
   -o-transition: 0.5s ease-in-out; }
+
+.works-content .work-link {
+  color: #ad9988;
+  text-align: center;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px; }
+  .works-content .work-link .icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    background-image: url("./../../assets/icon/google-play.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .works-content .work-link a {
+    font-size: 12px; }
+  .works-content .work-link a,
+  .works-content .work-link a:hover {
+    text-decoration: none; }
+
+.works-content .work-images,
+.works-content .work-images img {
+  width: 100%; }
 
 .top {
   border: 2px solid #ad9988;
@@ -635,13 +665,18 @@ table {
     width: 84px;
     height: 84px;
     margin-right: 16px; }
-  .top {
+  .works-content .work-link {
+    margin-bottom: 24px; }
+    .works-content .work-link .icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px; }
+    .works-content .work-link a {
+      font-size: 16px; }
+  .works-content .top {
     padding: 12px 0;
     font-size: 16px;
     line-height: 22px; } }
-
-.works-content img {
-  width: 100%; }
 
 @media screen and (min-width: 1200px) {
   .work-index .thumbnail-filter:hover {
@@ -654,6 +689,8 @@ table {
     -moz-transition: 0.5s ease-in-out;
     -o-filter: grayscale(0%);
     -o-transition: 0.5s ease-in-out; }
-  .top:hover {
+  .works-content .work-link a:hover {
+    text-decoration: underline; }
+  .works-content .top:hover {
     background-color: #ffffff;
     color: #ad9988; } }

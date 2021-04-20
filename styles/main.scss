@@ -1,12 +1,17 @@
 @import './constants/colors';
 @import './constants/typography';
+@import './constants/breakpoint';
 
 @import './base/normalize';
 @import './base/reset';
 
 @import './mixin/text-style';
+@import './mixin/responsive';
+@import './mixin/position';
+@import './mixin/flexbox';
+@import './mixin/icon';
 
 @import './layout/grid';
 @import './layout/gnb';
-@import './layout/content';
+@import './layout/index';
 @import './layout/work';

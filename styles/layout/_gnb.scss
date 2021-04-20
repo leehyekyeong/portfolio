@@ -2,6 +2,7 @@
   font-family: $font-gnb;
   padding: 12px 0;
   border-bottom: 1px solid $primary;
+  @include flexbox;
 }
 
 #name {

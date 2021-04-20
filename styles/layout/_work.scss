@@ -17,33 +17,63 @@
   display: flex;
 }
 
-.work-index .thumbnail-frame {
-  width: 60px;
-  height: 60px;
-  margin-right: 8px;
-  cursor: pointer;
+.work-index {
+  .thumbnail-frame {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .thumbnail-frame:last-child {
+    margin: 0;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+  }
+
+  // apply grayscale to unselected work thumbnail
+  .thumbnail-filter {
+    filter: grayscale(100%);
+    opacity: 50%;
+    transition: filter opacity 0.5s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-filter: grayscale(100%);
+    -moz-transition: 0.5s ease-in-out;
+    -o-filter: grayscale(100%);
+    -o-transition: 0.5s ease-in-out;
+  }
 }
 
-.work-index .thumbnail-frame:last-child {
-  margin: 0;
-}
-
-.thumbnail {
-  width: 100%;
-  height: 100%;
-}
-
-// apply grayscale to unselected work thumbnail
-.work-index .thumbnail-filter {
-  filter: grayscale(100%);
-  opacity: 50%;
-  transition: filter opacity 0.5s ease-in-out;
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-filter: grayscale(100%);
-  -moz-transition: 0.5s ease-in-out;
-  -o-filter: grayscale(100%);
-  -o-transition: 0.5s ease-in-out;
+.works-content {
+  .work-link {
+    color: $point;
+    text-align: center;
+    height: 24px;
+    @include flexbox;
+    margin-bottom: 16px;
+    .icon {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin-right: 6px;
+      @include icon('google-play.svg');
+    }
+    a {
+      font-size: 12px;
+    }
+    a,
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .work-images,
+  .work-images img {
+    width: 100%;
+  }
 }
 
 .top {
@@ -69,7 +99,7 @@
   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
 
-@media screen and (min-width: $md-breakpoint) {
+@include responsive(T) {
   .works {
     padding: 40px 0 24px;
     display: flex;
@@ -96,18 +126,28 @@
     margin-right: 16px;
   }
 
-  .top {
-    padding: 12px 0;
-    font-size: $font-size-16;
-    line-height: $line-height-16;
+  .works-content {
+    .work-link {
+      margin-bottom: 24px;
+      .icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+      }
+      a {
+        font-size: 16px;
+      }
+    }
+
+    .top {
+      padding: 12px 0;
+      font-size: $font-size-16;
+      line-height: $line-height-16;
+    }
   }
 }
 
-.works-content img {
-  width: 100%;
-}
-
-@media screen and (min-width: $lg-breakpoint) {
+@include responsive(D) {
   // thumbnail hover effect
   .work-index .thumbnail-filter:hover {
     filter: grayscale(0%);
@@ -121,9 +161,17 @@
     -o-transition: 0.5s ease-in-out;
   }
 
-  // top button hover effect
-  .top:hover {
-    background-color: $white;
-    color: $point;
+  // download link hover effect
+  .works-content {
+    .work-link {
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    // top button hover effect
+    .top:hover {
+      background-color: $white;
+      color: $point;
+    }
   }
 }
