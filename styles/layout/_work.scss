@@ -71,31 +71,6 @@
   }
 }
 
-#eastse-website {
-  position: relative;
-
-  .view-button {
-    // position setting
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    // shape and size setting
-    width: 44px;
-    height: 44px;
-    background-color: #006dbb;
-    border-radius: 100%;
-    // align contents setting
-    @include flexbox;
-    cursor: pointer;
-  }
-
-  .view-value {
-    color: $white;
-    font-family: $font-gnb;
-    font-size: $font-size-12;
-  }
-}
-
 .top {
   // color&shape setting
   border: 2px solid $point;
@@ -151,27 +126,12 @@
         padding-top: 2px;
       }
     }
+  }
 
-    #eastse-website {
-      .view-button {
-        // position setting
-        bottom: 40px;
-        right: 40px;
-        // shape and size setting
-        width: 60px;
-        height: 60px;
-      }
-      .view-value {
-        padding-top: 2px;
-        font-size: $font-size-16;
-      }
-    }
-
-    .top {
-      padding: 12px 0;
-      font-size: $font-size-16;
-      line-height: $line-height-16;
-    }
+  .top {
+    padding: 12px 0;
+    font-size: $font-size-16;
+    line-height: $line-height-16;
   }
 }
 
@@ -194,17 +154,6 @@
     .work-link {
       a:hover {
         text-decoration: underline;
-      }
-    }
-    #eastse-website {
-      .view-button {
-        // shape and size setting
-        width: 80px;
-        height: 80px;
-        transition: background-color 0.3s ease-in-out;
-      }
-      .view-button:hover {
-        background-color: #83ceeb;
       }
     }
   }
