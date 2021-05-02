@@ -553,7 +553,9 @@ table {
   .contact-icon {
     width: 24px;
     height: 24px;
-    margin-right: 16px; }
+    margin-right: 12px; }
+  .contact-text {
+    padding-bottom: 2px; }
   .content-item {
     margin-bottom: 40px; }
   .content-item-head {
@@ -626,25 +628,6 @@ table {
 .works-content .work-images img {
   width: 100%; }
 
-#eastse-website {
-  position: relative; }
-  #eastse-website .view-button {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 44px;
-    height: 44px;
-    background-color: #006dbb;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; }
-  #eastse-website .view-value {
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    font-size: 12px; }
-
 .top {
   border: 2px solid #ad9988;
   background-color: #ad9988;
@@ -689,15 +672,7 @@ table {
     .works-content .work-link a {
       font-size: 16px;
       padding-top: 2px; }
-  .works-content #eastse-website .view-button {
-    bottom: 40px;
-    right: 40px;
-    width: 60px;
-    height: 60px; }
-  .works-content #eastse-website .view-value {
-    padding-top: 2px;
-    font-size: 16px; }
-  .works-content .top {
+  .top {
     padding: 12px 0;
     font-size: 16px;
     line-height: 22px; } }
@@ -715,12 +690,6 @@ table {
     -o-transition: 0.5s ease-in-out; }
   .works-content .work-link a:hover {
     text-decoration: underline; }
-  .works-content #eastse-website .view-button {
-    width: 80px;
-    height: 80px;
-    transition: background-color 0.3s ease-in-out; }
-  .works-content #eastse-website .view-button:hover {
-    background-color: #83ceeb; }
   .top:hover {
     background-color: #ffffff;
     color: #ad9988; } }
