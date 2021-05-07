@@ -516,6 +516,7 @@ table {
   margin-bottom: 24px; }
 
 .content-item-head {
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   margin-bottom: 8px; }
 
@@ -578,6 +579,7 @@ table {
   align-items: center; }
 
 .work-type {
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 12px; }
 
