@@ -486,6 +486,8 @@ table {
 
 .content {
   padding: 16px 0;
+  position: relative;
+  left: -10px;
   font-family: "Spoqa Han Sans", sans-serif;
   font-size: 12px;
   line-height: 18px; }
@@ -542,6 +544,7 @@ table {
 @media screen and (min-width: 768px) {
   .content {
     padding: 40px 0;
+    left: 0;
     font-size: 16px;
     line-height: 22px; }
   .contact {

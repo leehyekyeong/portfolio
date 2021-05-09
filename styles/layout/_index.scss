@@ -1,5 +1,7 @@
 .content {
   padding: 16px 0;
+  position: relative;
+  left: -10px;
   font-family: $font-content;
   font-size: $font-size-12;
   line-height: $line-height-12;
@@ -70,6 +72,7 @@
 @include responsive(T) {
   .content {
     padding: 40px 0;
+    left: 0;
     font-size: $font-size-16;
     line-height: $line-height-16;
   }
