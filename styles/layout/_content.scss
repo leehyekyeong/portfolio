@@ -1,0 +1,9 @@
+.content {
+  padding: 16px 0;
+  @include text-style(12, $font-content);
+
+  @include responsive(T) {
+    padding: 24px 0;
+    @include text-style(16, $font-content);
+  }
+}
