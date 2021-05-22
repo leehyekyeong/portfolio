@@ -26,6 +26,22 @@
   @include responsive(T) {
     & {
       padding: 0;
+      margin: 0;
+
+      & li {
+        height: 22px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+    }
+
+    &-text {
+      padding-bottom: 2px;
     }
   }
 }
