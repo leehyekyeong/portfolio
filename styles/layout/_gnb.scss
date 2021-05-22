@@ -1,85 +1,81 @@
 .gnb {
   font-family: $font-gnb;
-  padding: 12px 0;
-  border-bottom: 1px solid $primary;
-  @include flexbox;
-}
 
-#name {
-  font-size: $sm-name-size;
-  line-height: $sm-name-line;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 8px;
-  cursor: pointer;
-}
-
-#menu {
-  font-size: $sm-menu-size;
-  line-height: $sm-menu-line;
-  font-weight: 400;
-}
-
-#menu ul {
-  display: flex;
-  justify-content: center;
-}
-
-#menu li {
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-#menu li:hover {
-  color: $point;
-  transition: color 200ms ease-in-out;
-}
-
-#menu li:last-child {
-  margin: 0;
-}
-
-.selected-menu {
-  color: $point;
-}
-
-.selected-menu::after {
-  content: ' ✨';
-}
-
-@include responsive(T) {
-  .gnb {
-    padding: 20px 0;
-    justify-content: space-between;
-    align-items: center;
+  &-wrapper {
+    width: 100%;
+    @include column-flexbox;
+    padding: 12px 0;
+    border-bottom: 1px solid $primary;
   }
 
-  #name {
-    text-align: left;
-    margin: 0;
+  .name {
+    font-size: $sm-name-size;
+    line-height: $sm-name-line;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 8px;
+    cursor: pointer;
   }
 
-  #menu ul {
-    justify-content: flex-end;
+  .menu {
+    font-size: $sm-menu-size;
+    line-height: $sm-menu-line;
+    font-weight: 400;
+
+    & ul {
+      display: flex;
+      justify-content: center;
+
+      & li {
+        margin-right: 24px;
+        cursor: pointer;
+
+        &:hover {
+          color: $point;
+          transition: color 200ms ease-in-out;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
   }
 
-  // - positon for ignore $gutter
-  #name {
-    position: relative;
-    left: -10px;
-    font-size: $lg-name-size;
-    line-height: $lg-name-line;
+  .selected-menu {
+    color: $point;
+
+    &::after {
+      content: ' ✨';
+    }
   }
 
-  // - positon for ignore $gutter
-  #menu {
-    position: relative;
-    right: -10px;
-    font-size: $lg-menu-size;
-    line-height: $lg-menu-line;
-  }
+  @include responsive(T) {
+    &-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
 
-  #menu li {
-    margin-right: 60px;
+    .name {
+      font-size: $lg-name-size;
+      line-height: $lg-name-line;
+      text-align: left;
+      margin: 0;
+    }
+
+    .menu {
+      font-size: $lg-menu-size;
+      line-height: $lg-menu-line;
+
+      & ul {
+        justify-content: flex-end;
+
+        & li {
+          margin-right: 60px;
+        }
+      }
+    }
   }
 }
