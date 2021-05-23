@@ -66,9 +66,17 @@
     }
   }
 
-  &-images,
-  &-images img {
+  &-images {
     width: 100%;
+
+    img {
+      width: 100%;
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
 
   .top {
