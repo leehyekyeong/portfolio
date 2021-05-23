@@ -1,167 +1,171 @@
-.works {
-  padding: 20px 0;
-}
-
 .work {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  @include flexbox(between, center);
-}
+  padding: 20px 0;
 
-.work-type {
-  font-family: $font-gnb;
-  font-weight: bold;
-  font-size: $font-size-12;
-}
-
-.work-index {
-  // display: flex;
-  @include flexbox;
-}
-
-.work-index {
-  .thumbnail-frame {
-    width: 60px;
-    height: 60px;
-    margin-right: 8px;
-    cursor: pointer;
+  &-wrapper {
+    @include column-flexbox(start, between);
+    margin-bottom: 20px;
   }
 
-  .thumbnail-frame:last-child {
-    margin: 0;
+  &-group {
+    @include flexbox(between, center);
   }
 
-  .thumbnail {
-    width: 100%;
-    height: 100%;
+  &-type {
+    font-family: $font-gnb;
+    font-weight: bold;
+    font-size: $font-size-12;
   }
 
-  // apply grayscale to unselected work thumbnail
-  .thumbnail-filter {
-    filter: grayscale(100%);
-    opacity: 50%;
-    transition: filter opacity 0.5s ease-in-out;
-    -webkit-filter: grayscale(100%);
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-filter: grayscale(100%);
-    -moz-transition: 0.5s ease-in-out;
-    -o-filter: grayscale(100%);
-    -o-transition: 0.5s ease-in-out;
-  }
-}
+  &-index {
+    @include flexbox;
 
-.works-content {
-  .work-link {
+    .thumbnail-frame {
+      width: 60px;
+      height: 60px;
+      margin-right: 8px;
+      cursor: pointer;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: 100%;
+
+      // apply grayscale to unselected work thumbnail
+      &-filter {
+        filter: grayscale(100%);
+        opacity: 50%;
+        transition: filter opacity 0.5s ease-in-out;
+        -webkit-filter: grayscale(100%);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-filter: grayscale(100%);
+        -moz-transition: 0.5s ease-in-out;
+        -o-filter: grayscale(100%);
+        -o-transition: 0.5s ease-in-out;
+      }
+    }
+  }
+
+  &-link {
     color: $point;
     font-family: $font-gnb;
     text-align: center;
     height: 24px;
     @include flexbox;
     margin-bottom: 16px;
+
     a {
       font-size: 12px;
     }
+
     a strong {
       font-weight: 700;
     }
   }
-  .work-images,
-  .work-images img {
+
+  &-images,
+  &-images img {
     width: 100%;
   }
-}
 
-.top {
-  // color&shape setting
-  border: 2px solid $point;
-  background-color: $point;
-  color: $white;
-  padding: 8px 0;
-  margin: 20px 0;
-  border-radius: 8px;
-  // align elements
-  @include flexbox;
-  // font setting
-  font-family: $font-gnb;
-  font-size: $font-size-12;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  line-height: $line-height-12;
-  // interaction
-  cursor: pointer;
-  transition: all 0.25s ease-in-out;
-}
-
-@include responsive(T) {
-  .works {
-    padding: 40px 0 24px;
+  .top {
+    // color&shape setting
+    border: 2px solid $point;
+    background-color: $point;
+    color: $white;
+    padding: 8px 0;
+    margin: 20px 0;
+    border-radius: 8px;
+    // align elements
     @include flexbox;
+    // font setting
+    font-family: $font-gnb;
+    font-size: $font-size-12;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    line-height: $line-height-12;
+    // interaction
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
   }
 
-  .work {
-    @include column-flexbox;
-    margin-right: 80px;
-  }
+  @include responsive(T) {
+    padding: 40px 0 24px;
 
-  .work:last-child {
-    margin: 0;
-  }
+    &-wrapper {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
 
-  .work-type {
-    margin-bottom: 24px;
-    font-size: $font-size-16;
-  }
+    &-group {
+      @include column-flexbox;
+      margin-right: 80px;
 
-  .work-index .thumbnail-frame {
-    width: 84px;
-    height: 84px;
-    margin-right: 16px;
-  }
+      &:last-child {
+        margin: 0;
+      }
+    }
 
-  .works-content {
-    .work-link {
+    &-type {
       margin-bottom: 24px;
+      font-size: $font-size-16;
+    }
+
+    &-index {
+      .thumbnail-frame {
+        width: 84px;
+        height: 84px;
+        margin-right: 16px;
+      }
+    }
+
+    &-link {
+      margin-bottom: 24px;
+
       a {
         font-size: 16px;
         padding-top: 2px;
       }
     }
+
+    .top {
+      padding: 12px 0;
+      font-size: $font-size-16;
+      line-height: $line-height-16;
+    }
   }
 
-  .top {
-    padding: 12px 0;
-    font-size: $font-size-16;
-    line-height: $line-height-16;
-  }
-}
+  @include responsive(D) {
+    // thumbnail hover effect
+    &-index {
+      .thumbnail-filter:hover {
+        filter: grayscale(0%);
+        opacity: 100%;
+        transition: filter opacity 0.5s ease-in-out;
+        -webkit-filter: grayscale(0%);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-filter: grayscale(0%);
+        -moz-transition: 0.5s ease-in-out;
+        -o-filter: grayscale(0%);
+        -o-transition: 0.5s ease-in-out;
+      }
+    }
 
-@include responsive(D) {
-  // thumbnail hover effect
-  .work-index .thumbnail-filter:hover {
-    filter: grayscale(0%);
-    opacity: 100%;
-    transition: filter opacity 0.5s ease-in-out;
-    -webkit-filter: grayscale(0%);
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-filter: grayscale(0%);
-    -moz-transition: 0.5s ease-in-out;
-    -o-filter: grayscale(0%);
-    -o-transition: 0.5s ease-in-out;
-  }
-
-  .works-content {
-    // download link hover effect
-    .work-link {
+    &-link {
       a:hover {
         text-decoration: underline;
       }
     }
-  }
 
-  // top button hover effect
-  .top:hover {
-    background-color: $white;
-    color: $point;
+    // top button hover effect
+    .top:hover {
+      background-color: $white;
+      color: $point;
+    }
   }
 }
