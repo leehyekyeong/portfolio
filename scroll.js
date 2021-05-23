@@ -1,5 +1,5 @@
 $('#top').click(function (event) {
   event.preventDefault();
-  var works_y = $('#works').offset();
-  $('html, body').animate({ scrollTop: works_y.top }, 400);
+  var work_y = $('.work').offset();
+  $('html, body').animate({ scrollTop: work_y.top }, 400);
 });
