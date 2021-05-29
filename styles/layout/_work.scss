@@ -66,6 +66,16 @@
     }
   }
 
+  &-desc {
+    color: $point;
+    font-family: $font-content;
+    font-size: 12px;
+    font-weight: bold;
+    height: 18px;
+    border-bottom: 1px solid $point;
+    margin: 48px 0 16px;
+  }
+
   &-images {
     width: 100%;
 
@@ -139,6 +149,12 @@
         font-size: 16px;
         padding-top: 2px;
       }
+    }
+
+    &-desc {
+      font-size: 16px;
+      height: 24px;
+      margin-top: 96px;
     }
 
     .top {
